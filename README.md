@@ -23,3 +23,6 @@ ESP32 based smart accident detection system using ADXL345, vibration sensor and 
 - Embedded C
 - ThingSpeak
 - HTML
+  ## Circuit Diagram
+
+![Circuit Diagram](circuit_diagram.png)
