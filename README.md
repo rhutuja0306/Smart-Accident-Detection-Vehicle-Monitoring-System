@@ -26,7 +26,7 @@ The system enables faster emergency response and continuous vehicle monitoring.
 | Breadboard | 1 |
 | Jumper Wires | Several |
 | USB Cable | 1 |
-
+|vibration sensor | 1 |
 ## 💻 Software Used
 
 Arduino IDE
@@ -42,3 +42,22 @@ Adafruit ADXL345 Library
 WiFi Library
 HTML
 
+## ⚙ Working Principle
+
+Step 1:
+ESP32 continuously reads vibration sensor value and acceleration values from the ADXL345 sensor.
+
+Step 2:
+If the acceleration and vibration exceeds the accident threshold, an accident is detected.
+
+Step 3:
+ESP32 reads the current latitude and longitude from the GPS module.
+
+Step 4:
+Vehicle location is uploaded to ThingSpeak.
+
+Step 5:
+The web server displays the accident status and live sensor readings.
+
+Step 6:
+The monitoring dashboard updates automatically.
